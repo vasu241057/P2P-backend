@@ -1,0 +1,31 @@
+{
+  "name": "p2p-transfer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "express": "^4.20.0",
+    "typescript": "^5.6.2",
+    "uuid": "^10.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.12",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.19.1",
+    "ts-node-dev": "^2.0.0"
+  }
+}
