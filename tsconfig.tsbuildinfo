@@ -1,0 +1,1 @@
+{"root":["./src/app.ts","./src/index.ts","./src/utils.ts","./src/controller/connectioncontroller.ts","./src/controller/filetransfercontroller.ts","./src/middlewares/errorhandler.ts","./src/prisma/client.ts","./src/routes/connectionroutes.ts","./src/routes/filetransferroutes.ts","./src/services/filetransferservice.ts","./src/services/websocketservice.ts"],"version":"5.6.2"}
