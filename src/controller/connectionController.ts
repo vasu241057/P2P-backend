@@ -29,6 +29,7 @@ export const connectUser = async (req: Request, res: Response) => {
 
   // Check WebSocket connections for the given passcode
   const wsConnections = getConnection(passcode);
+
   if (!wsConnections || wsConnections.length === 0) {
     return res
       .status(400)

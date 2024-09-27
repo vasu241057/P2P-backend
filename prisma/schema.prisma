@@ -23,8 +23,7 @@ model FileTransfer {
   id           String   @id @default(uuid())
   connection   Connection @relation(fields: [connectionId], references: [id])
   connectionId String
-  Passcode String
- 
+  passcode     String
   fileName     String
   fileSize     Int
   totalChunks  Int
