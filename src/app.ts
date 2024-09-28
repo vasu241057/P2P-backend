@@ -20,6 +20,9 @@ const prisma = new PrismaClient();
 app.use(express.json());
 
 app.use("/connections", connectionRoutes);
+app.use("/", (req, res) => {
+  res.send("Hello World!");
+});
 // app.use("/file-transfer", fileTransferRoutes);
 
 app.use(errorHandler);
