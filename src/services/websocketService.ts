@@ -134,6 +134,7 @@ async function handleTransferFile(ws: ExtendedWebSocket, message: any) {
 
 async function handleFileChunk(ws: ExtendedWebSocket, message: any) {
   const { targetPasscode, chunkData, transferId, chunkNumber } = message;
+  console.log(targetPasscode, transferId, chunkNumber);
 
   try {
     // Test decoding a small portion of the base64 string
